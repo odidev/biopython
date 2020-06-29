@@ -77,7 +77,7 @@ matrix:
             - *default_packages
     - stage: test
       python: 3.8
-      env: TOXENV=py38-nocov
+      env: TOXENV=py38-nocov PIP_NO_CACHE_DIR=off
       arch: arm64
       services:
       addons:

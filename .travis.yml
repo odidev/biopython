@@ -85,11 +85,11 @@ matrix:
           packages:
     - stage: test
       python: 3.8
-      env: TOXENV=py38-nocov
+      env: TOXENV=py38-nocov PIP_NO_CACHE_DIR=off
       arch: ppc64le
     - stage: test
       python: 3.8
-      env: TOXENV=py38-cover
+      env: TOXENV=py38-cover PIP_NO_CACHE_DIR=off
       arch: s390x
     - stage: test
       python: pypy3
